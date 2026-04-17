@@ -4,7 +4,6 @@ import { notFound } from "./middleware/not-found.js";
 import { errorHandler } from "./middleware/error-handler.js";
 
 export const app = express();
-
 app.use(express.json());
 
 app.use("/api", router);
