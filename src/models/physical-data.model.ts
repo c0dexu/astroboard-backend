@@ -3,9 +3,15 @@ export class ValueExponentData {
   exponent!: number;
 }
 
+export class SolarSystemBodyDimension {
+  width!: number;
+  height!: number;
+  breadth!: number;
+}
+
 export class PhysicalData {
-  mass!: ValueExponentData;
-  volume!: ValueExponentData;
+  mass?: ValueExponentData;
+  volume?: ValueExponentData;
   density!: number;
   gravity!: number;
   flattening!: number;
@@ -13,4 +19,5 @@ export class PhysicalData {
   axialTilt!: number;
   meanRadius!: number;
   equaRadius!: number;
+  dimension?: SolarSystemBodyDimension;
 }
