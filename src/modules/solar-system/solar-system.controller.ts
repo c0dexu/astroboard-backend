@@ -17,5 +17,5 @@ export async function fetchAllBodies(
   });
   const raw: SolarSystemBodyRaw[] = response.data.bodies;
   const result = raw.map((x) => mapSolarSystemBodyRawToPlanet(x));
-  res.status(200).json(result);
+  res.json(result);
 }
